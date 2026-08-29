@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: ecom-application
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecomdb
+    username: postgres
+    password: ${DB_PASSWORD}
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: beans, health
+
+  endpoint:
+    health:
+      show-details: always
+
+    shutdown:
+      enabled: true
+
+  info:
+    env:
+      enabled: true
+
+server:
+  shutdown: graceful
+
+info:
+  app:
+    name: MyNewApp
+    description: App build by us
+    version: 1.0.0
+
+
+

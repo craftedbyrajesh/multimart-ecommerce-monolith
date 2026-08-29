@@ -1,0 +1,48 @@
+# Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# Keep target directories inside source folders ignored as well
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Spring Tool Suite
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code
+.vscode/
+
+# Environment files
+.env
+.env.*
+
+# Local application configuration
+application-local.yml
+application-local.properties
+
+# Logs
+*.log
+logs/
